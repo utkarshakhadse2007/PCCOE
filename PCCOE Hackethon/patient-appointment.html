@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Appointment</title>
+
+    <link rel="stylesheet" href="patient-style.css">
+
+</head>
+
+<body>
+
+<div class="appointment-page">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h3>PATIENT LOGIN</h3>
+
+        <div class="line"></div>
+
+        <a href="book-appointment.html">
+             &nbsp; Dashboard
+        </a>
+
+        <a href="book-appointment.html" class="active">
+            ✦ &nbsp; Book Appointment
+        </a>
+
+
+        <div class="token-box">
+
+            <h4>Your Token</h4>
+
+            <p>Current Token Number</p>
+
+            <strong id="tokenNumber">--</strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="appointment-content">
+
+        <h1>Book Appointment</h1>
+
+        <div class="appointment-card">
+
+            <h2>Patient Information</h2>
+
+
+            <div class="row">
+
+                <div class="input-group name">
+                    <label>Patient Name</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter full name"
+                        id="patientName"
+                    >
+                </div>
+
+
+                <div class="input-group age">
+                    <label>Age</label>
+
+                    <input
+                        type="number"
+                        placeholder="Years"
+                        id="age"
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="input-group">
+
+                    <label>Gender</label>
+
+                    <select id="gender">
+
+                        <option value="">Select Gender</option>
+
+                        <option>Male</option>
+
+                        <option>Female</option>
+
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Blood Group</label>
+
+                    <select id="blood">
+
+                        <option value="">Select Blood Group</option>
+
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Symptoms</label>
+
+                <textarea
+                    id="symptoms"
+                    placeholder="Describe your symptoms or reason for visit..."
+                ></textarea>
+
+            </div>
+
+
+            <button
+                class="appointment-button"
+                onclick="bookAppointment()"
+            >
+                Book Appointment
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealSure - Doctor Login</title>
+
+  <!-- Google Fonts for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<link rel="stylesheet" href="Doctor_login.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left Hero Section -->
+    <div class="left-section">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <div class="brand-text">
+          <h2>HealSure</h2>
+          <p>Electronic Health Record System</p>
+        </div>
+      </div>
+
+      <div class="welcome-text">
+        <h1>Welcome,<br>Doctor</h1>
+        <p>Access patient records, manage treatment plans, and provide better care.</p>
+      </div>
+
+      <div class="left-footer">
+        <p class="quote">Trusted Care.<br>Through Technology.</p>
+      </div>
+    </div>
+
+    <!-- Right Form Section -->
+    <div class="right-section">
+      <div class="card">
+        <div class="profile-avatar">
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <h2>Doctor Login</h2>
+        <p class="subtitle">Enter your credentials to access your account</p>
+
+        <form action="#">
+          <div class="input-group">
+            <i class="fa-regular fa-user left-icon"></i>
+            <input type="text" placeholder="Username" required />
+          </div>
+
+          <div class="input-group">
+            <i class="fa-solid fa-lock left-icon"></i>
+            <input type="password" placeholder="Password" required />
+            <i class="fa-regular fa-eye right-icon"></i>
+          </div>
+
+          <button type="submit" class="btn-login">
+            <i class="fa-solid fa-right-to-bracket"></i> Login
+          </button>
+        </form>
+
+        <!-- Don't have an account / Register Link -->
+        <div class="register-option">
+          Don't have an account? <a href="doctor-register.html">Register here</a>
+        </div>
+
+        <a href="Main-Dashboard.html" class="back-link">
+          <i class="fa-solid fa-arrow-left"></i> Back to Home
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
